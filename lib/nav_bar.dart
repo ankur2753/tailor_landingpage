@@ -15,8 +15,11 @@ class _NavBarState extends State<NavBar> {
   String selectedVal = 'MEN';
   @override
   Widget build(BuildContext context) {
-    const textStyle =
-        TextStyle(color: Colors.white, decoration: TextDecoration.underline);
+    const textStyle = TextStyle(
+      color: Colors.orangeAccent,
+      decoration: TextDecoration.underline,
+    );
+    const defStyle = TextStyle(color: Colors.white);
     return PreferredSize(
       preferredSize: const Size(double.infinity, 90),
       child: Container(
@@ -27,7 +30,7 @@ class _NavBarState extends State<NavBar> {
             Image.asset('tailor_logo.jpg', height: 80),
             DropdownButton(
                 value: selectedVal,
-                style: const TextStyle(color: Colors.orange),
+                style: const TextStyle(color: Colors.orangeAccent),
                 items: const [
                   DropdownMenuItem<String>(
                     child: Text("MEN"),
@@ -52,7 +55,7 @@ class _NavBarState extends State<NavBar> {
                 onPressed: () {},
                 child: Text(
                   "About us",
-                  style: mouseOn[1] ? textStyle : null,
+                  style: mouseOn[1] ? textStyle : defStyle,
                 )),
             TextButton(
                 onHover: (bool isHovering) {
@@ -63,7 +66,7 @@ class _NavBarState extends State<NavBar> {
                 onPressed: () {},
                 child: Text(
                   "How it Works",
-                  style: mouseOn[2] ? textStyle : null,
+                  style: mouseOn[2] ? textStyle : defStyle,
                 )),
             TextButton(
                 onHover: (bool isHovering) {
@@ -74,7 +77,7 @@ class _NavBarState extends State<NavBar> {
                 onPressed: () {},
                 child: Text(
                   "Contact Us",
-                  style: mouseOn[3] ? textStyle : null,
+                  style: mouseOn[3] ? textStyle : defStyle,
                 )),
             TextButton(
                 onHover: (bool isHovering) {
@@ -85,7 +88,7 @@ class _NavBarState extends State<NavBar> {
                 onPressed: () {},
                 child: Text(
                   "SignUp / SignIn",
-                  style: mouseOn[4] ? textStyle : null,
+                  style: mouseOn[4] ? textStyle : defStyle,
                 )),
             TextButton.icon(
               onHover: (bool isHovering) {
@@ -99,7 +102,7 @@ class _NavBarState extends State<NavBar> {
               icon: const FaIcon(FontAwesomeIcons.bagShopping),
               label: Text(
                 "Cart",
-                style: mouseOn[5] ? textStyle : null,
+                style: mouseOn[5] ? textStyle : defStyle,
               ),
             )
           ],

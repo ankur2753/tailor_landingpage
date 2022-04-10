@@ -63,6 +63,11 @@ flutter:
     - assets/sewing_machine.jpg
     - assets/sewing-unsplash.jpg
     - assets/measuring.jpg
+    - assets/custom_fit.jpg
+    - assets/fabric0.jpg
+    - assets/fabric1.jpg
+    - assets/fabric2.jpg
+    - assets/fabric3.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
